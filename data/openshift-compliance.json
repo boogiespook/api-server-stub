@@ -1,0 +1,79 @@
+{
+  "kind": "Namespace",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "openshift-compliance",
+    "uid": "0008a171-7742-4b24-8af5-675fe7caf7ff",
+    "resourceVersion": "74450",
+    "creationTimestamp": "2022-09-05T10:20:21Z",
+    "labels": {
+      "kubernetes.io/metadata.name": "openshift-compliance",
+      "olm.operatorgroup.uid/8a330724-8fb2-45d3-b5c4-202c8c575a2b": ""
+    },
+    "annotations": {
+      "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"name\":\"openshift-compliance\"}}\n",
+      "openshift.io/sa.scc.mcs": "s0:c27,c24",
+      "openshift.io/sa.scc.supplemental-groups": "1000750000/10000",
+      "openshift.io/sa.scc.uid-range": "1000750000/10000"
+    },
+    "managedFields": [
+      {
+        "manager": "cluster-policy-controller",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2022-09-05T10:20:21Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              "f:openshift.io/sa.scc.mcs": {},
+              "f:openshift.io/sa.scc.supplemental-groups": {},
+              "f:openshift.io/sa.scc.uid-range": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "kubectl-client-side-apply",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2022-09-05T10:20:21Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:annotations": {
+              ".": {},
+              "f:kubectl.kubernetes.io/last-applied-configuration": {}
+            },
+            "f:labels": {
+              ".": {},
+              "f:kubernetes.io/metadata.name": {}
+            }
+          }
+        }
+      },
+      {
+        "manager": "olm",
+        "operation": "Update",
+        "apiVersion": "v1",
+        "time": "2022-09-05T10:20:28Z",
+        "fieldsType": "FieldsV1",
+        "fieldsV1": {
+          "f:metadata": {
+            "f:labels": {
+              "f:olm.operatorgroup.uid/8a330724-8fb2-45d3-b5c4-202c8c575a2b": {}
+            }
+          }
+        }
+      }
+    ]
+  },
+  "spec": {
+    "finalizers": [
+      "kubernetes"
+    ]
+  },
+  "status": {
+    "phase": "Active"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "kind": "Status",
+  "apiVersion": "v1",
+  "metadata": {},
+  "status": "Failure",
+  "message": "namespaces \"openshift-logging\" not found",
+  "reason": "NotFound",
+  "details": {
+    "name": "openshift-logging",
+    "kind": "namespaces"
+  },
+  "code": 404
+}

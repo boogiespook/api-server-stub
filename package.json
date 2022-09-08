@@ -1,0 +1,29 @@
+{
+  "name": "telescope-api-server-stub",
+  "version": "1.0.0",
+  "description": "A Simple API server to get example results when a real endpoint isn't available",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RH-Telescope/api-server-stub.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "api-server",
+    "telescope"
+  ],
+  "author": "Chris Jenkins",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.12"
+  }
+}

@@ -1,0 +1,34 @@
+
+const complianceRoutes = (app, fs) => {
+
+    // variables
+    const dataPath = './data/openshift-compliance.json';
+
+    // helper methods
+    const readFile = (callback, returnJson = false, filePath = dataPath, encoding = 'utf8') => {
+        fs.readFile(filePath, encoding, (err, data) => {
+            if (err) {
+                throw err;
+            }
+
+            callback(returnJson ? JSON.parse(data) : data);
+        });
+    };
+
+
+    // READ
+//    app.get('/openshift-compliance', (req, res) => {
+    app.get('/api/v1/namespaces/openshift-compliance', (req, res) => {
+        fs.readFile(dataPath, 'utf8', (err, data) => {
+            if (err) {
+                throw err;
+            }
+
+            res.send(JSON.parse(data));
+        });
+    });
+
+
+};
+
+module.exports = complianceRoutes;
